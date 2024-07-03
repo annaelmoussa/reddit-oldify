@@ -1,0 +1,22 @@
+{
+  "manifest_version": 2,
+  "name": "Reddit Oldify",
+  "version": "1.0",
+  "description": "Redirects Reddit links to old.reddit.com",
+  "author": "HekimaLab",
+  "icons": {
+    "48": "logo-48.png",
+    "96": "logo-96.png"
+  },
+  "permissions": [
+    "webRequest",
+    "webRequestBlocking",
+    "*://www.reddit.com/*",
+    "*://reddit.com/*"
+  ],
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": true
+  },
+  "content_security_policy": "script-src 'self'; object-src 'self'"
+}
